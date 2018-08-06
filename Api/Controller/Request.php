@@ -45,8 +45,8 @@ class Request
      */
     private function setOrder()
     {
-        $this->orderProcess = new Order($this->order);
-        $this->response =  $this->orderProcess->getResponse();
+        $order = new Order($this->order);
+        $this->response =  $order->getResponse();
     }
 
     /**Send's the varios responses
